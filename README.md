@@ -2,7 +2,7 @@
 title: Voice Persona Studio
 emoji: 🎙️
 sdk: streamlit
-python_version: 3.10  # This is the secret sauce for TTS
+python_version: 3.11  # This is the secret sauce for TTS
 app_file: app.py
 ---
 
