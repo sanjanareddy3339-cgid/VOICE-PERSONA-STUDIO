@@ -2,6 +2,7 @@ name: Sync to Hugging Face hub
 on:
   push:
     branches: [main]
+  # This allows you to run the sync manually from the Actions tab
   workflow_dispatch:
 
 jobs:
@@ -16,4 +17,4 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git push -f https://sanjanareddy3339-cgid:$HF_TOKEN@huggingface.co/spaces/sanjanareddy3339-cgid/voice-persona-studio main
+          git push -f https://SanjanaReddy999:$HF_TOKEN@huggingface.co/spaces/SanjanaReddy999/voice-persona-studio main
