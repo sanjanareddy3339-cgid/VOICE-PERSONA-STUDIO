@@ -5,4 +5,4 @@ numpy<2.0.0
 librosa
 langdetect
 SpeechRecognition
-
+PyAudio
