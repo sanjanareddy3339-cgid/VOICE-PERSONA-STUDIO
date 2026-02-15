@@ -1,11 +1,9 @@
 ---
-title: VOICE PERSONA STUDIO
-emoji: 🚀
-colorFrom: blue
-colorTo: red
+title: Voice Persona Studio
+emoji: 🎙️
 sdk: streamlit
+python_version: 3.10  # This is the secret sauce for TTS
 app_file: app.py
-pinned: false
 ---
 
 # VOICE-PERSONA-STUDIO
