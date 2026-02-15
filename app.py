@@ -56,7 +56,7 @@ st.markdown('<p class="sub-caption">✨ <i>Precision Multilingual Cloning Engine
 @st.cache_resource
 def load_model():
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    return TTS("tts_models/multilingual/multi-dataset/xtts_v2", agree_to_terms=True).to(device)
+    return TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
 
 model = load_model()
 
@@ -100,3 +100,4 @@ if st.button("🚀 GENERATE HIGH-FIDELITY CLONE"):
     else:
 
         st.error("Please provide both a voice sample and a script.")
+
