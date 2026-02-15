@@ -1,3 +1,12 @@
+import sys
+from transformers.generation import beam_search
+# Manually inject the missing name into the transformers module
+import transformers
+if not hasattr(transformers, "BeamSearchScorer"):
+    transformers.BeamSearchScorer = beam_search.BeamSearchScorer
+
+import os
+os.environ["COQUI_TOS_AGREED"] = "1"
 import streamlit as st
 import os
 os.environ["COQUI_TOS_AGREED"] = "1"
@@ -101,5 +110,6 @@ if st.button("🚀 GENERATE HIGH-FIDELITY CLONE"):
     else:
 
         st.error("Please provide both a voice sample and a script.")
+
 
 
