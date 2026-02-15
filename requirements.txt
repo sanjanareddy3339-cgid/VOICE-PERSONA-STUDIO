@@ -1,10 +1,8 @@
-TTS==0.22.0
-streamlit
-transformers==4.44.2
-torch
+coqui-tts
+transformers<=4.43.4
 numpy<2.0.0
-librosa
+streamlit
+torch
 langdetect
 SpeechRecognition
-PyAudio
 
