@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+os.environ["COQUI_TOS_AGREED"] = "1"
 import torch
 from TTS.api import TTS
 from langdetect import detect
@@ -100,4 +101,5 @@ if st.button("🚀 GENERATE HIGH-FIDELITY CLONE"):
     else:
 
         st.error("Please provide both a voice sample and a script.")
+
 
