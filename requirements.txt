@@ -1,8 +1,10 @@
 TTS==0.22.0
 streamlit
+transformers==4.44.2
 torch
 numpy<2.0.0
 librosa
 langdetect
 SpeechRecognition
 PyAudio
+
